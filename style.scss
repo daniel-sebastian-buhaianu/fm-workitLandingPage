@@ -1,0 +1,32 @@
+$dark-purple--color: #24053E;
+$davys-gray--color: #584D62;
+$eucalyptus--color: #44FFA1;
+$ghost-white--color: #FCF8FF;
+header {
+  background-image: url(assets/images/header.svg);
+  height: 482px;
+  nav {
+    padding: 32px 16px 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      color: white;
+      background-color: $dark-purple--color;
+      border: 0;
+      position: relative;
+      font-family: "Manrope", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 125px;
+        height: 3px;
+        background-color: $eucalyptus--color;
+        left: 4px;
+        top: 27px;
+      }
+    }
+  }
+}
