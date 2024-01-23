@@ -2,9 +2,17 @@ $dark-purple--color: #24053E;
 $davys-gray--color: #584D62;
 $eucalyptus--color: #44FFA1;
 $ghost-white--color: #FCF8FF;
+$primary--font-family: "Fraunces 144pt S000";
+$secondary--font-family: "Manrope";
+html {
+  font-family: $primary--font-family, serif;
+}
 header {
-  background-image: url(assets/images/header.svg);
   height: 482px;
+  background-image: url(assets/images/header.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
   nav {
     padding: 32px 16px 0px 16px;
     display: flex;
@@ -15,7 +23,7 @@ header {
       background-color: $dark-purple--color;
       border: 0;
       position: relative;
-      font-family: "Manrope", sans-serif;
+      font-family: $secondary--font-family, sans-serif;
       font-size: 16px;
       font-weight: 700;
       &:after {
@@ -27,6 +35,85 @@ header {
         left: 4px;
         top: 27px;
       }
+    }
+  }
+  .hero {
+    margin: 64px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: white;
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center;
+      span {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 152px;
+          height: 3px;
+          background-color: $eucalyptus--color;
+          left: 2px;
+          top: 56px;
+        }
+      }
+    }
+    button {
+      margin-top: 40px;
+      font-family: $secondary--font-family, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: $dark-purple--color;
+      background-color: $eucalyptus--color;
+      border: none;
+      padding: 12px 24px;
+    }
+    img {
+      width: 298px;
+      margin-top: 64px;
+    }
+  }
+}
+main {
+  height: 1070px;
+  background-image: url(assets/images/main.svg);
+  background-repeat: no-repeat;
+  margin-top: -105px;
+  padding-top: 245px;
+  position: relative;
+  z-index: -2;
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    text-align: center;
+    .number {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 36px;
+      color: $dark-purple--color;
+      border-radius: 30.5px;
+      border: 1px solid $davys-gray--color;
+      padding: 4px 19.3px;
+      margin-bottom: 24px;
+    }
+    h3 {
+      font-size: 28px;
+      font-weight: 600;
+      color: $dark-purple--color;
+      margin-bottom: 16px;
+    }
+    .text {
+      color: $davys-gray--color;
+      font-family: $secondary--font-family, sans-serif;
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 40px;
     }
   }
 }

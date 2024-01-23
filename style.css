@@ -1,6 +1,13 @@
+html {
+  font-family: "Fraunces 144pt S000", serif;
+}
+
 header {
-  background-image: url(assets/images/header.svg);
   height: 482px;
+  background-image: url(assets/images/header.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
 }
 header nav {
   padding: 32px 16px 0px 16px;
@@ -25,6 +32,86 @@ header nav button:after {
   background-color: #44FFA1;
   left: 4px;
   top: 27px;
+}
+header .hero {
+  margin: 64px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .hero h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+header .hero h1 span {
+  position: relative;
+}
+header .hero h1 span:after {
+  content: "";
+  position: absolute;
+  width: 152px;
+  height: 3px;
+  background-color: #44FFA1;
+  left: 2px;
+  top: 56px;
+}
+header .hero button {
+  margin-top: 40px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #24053E;
+  background-color: #44FFA1;
+  border: none;
+  padding: 12px 24px;
+}
+header .hero img {
+  width: 298px;
+  margin-top: 64px;
+}
+
+main {
+  height: 1070px;
+  background-image: url(assets/images/main.svg);
+  background-repeat: no-repeat;
+  margin-top: -105px;
+  padding-top: 245px;
+  position: relative;
+  z-index: -2;
+}
+main .benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  text-align: center;
+}
+main .benefit .number {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #24053E;
+  border-radius: 30.5px;
+  border: 1px solid #584D62;
+  padding: 4px 19.3px;
+  margin-bottom: 24px;
+}
+main .benefit h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #24053E;
+  margin-bottom: 16px;
+}
+main .benefit .text {
+  color: #584D62;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
