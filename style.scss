@@ -113,34 +113,39 @@ main {
   }
 }
 #about-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img {
-    width: 281px;
-    margin-top: 100px;
-  }
-  > div {
-    margin-top: -53px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .container {
+    width: 343px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    padding: 32px 31px;
-    background-color: $dark-purple--color;
-    color: white;
-    h3 {
-      font-size: 32px;
-      font-weight: 600;
-      line-height: 48px;
-      margin-bottom: 16px;
-    }
-    .text {
+    img {
       width: 281px;
-      font-family: $secondary--font-family, sans-serif;
-      font-size: 16px;
-      line-height: 28px;
-      margin-bottom: 24px;
+      margin-top: 100px;
+      position: relative;
+      z-index: -1;
+    }
+    > div {
+      margin-top: -53px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 32px 31px;
+      background-color: $dark-purple--color;
+      color: white;
+      h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 48px;
+        margin-bottom: 16px;
+      }
+      .text {
+        width: 281px;
+        font-family: $secondary--font-family, sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 24px;
+      }
     }
   }
 }
@@ -221,6 +226,79 @@ footer {
         height: 286.603px;
         margin-top: 55px;
       }
+    }
+  }
+  main {
+    svg {
+      height: 920px;
+      margin-top: -145px;
+    }
+    .container {
+      margin-top: -145px;
+      > div {
+        margin-top: 325px;
+        width: 573px;
+      }
+    }
+    .benefit {
+      flex-direction: row;
+      text-align: start;
+      margin-bottom: 48px;
+      padding: 0;
+      .number {
+        margin-right: 32px;
+      }
+      .text {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  #about-us {
+    .container {
+      width: 689px;
+      height: 626px;
+      text-align: start;
+      > div {
+        width: 514px;
+        align-items: inherit;
+        text-align: inherit;
+        padding: 0;
+        position: relative;
+        top: -77px;
+        left: 174px;
+        > * {
+          margin-left: 56px;
+        }
+        h3 {
+          font-size: 48px;
+          line-height: 56px;
+          margin-top: 48px;
+          margin-bottom: 24px;
+        }
+        .text {
+          width: 402px;
+        }
+        button {
+          width: 172px;
+          margin-bottom: 56px;
+          padding: 12px 0px;
+        }
+        .pattern {
+          display: inherit;
+          position: absolute;
+          z-index: 0;
+          margin: 0;
+          left: 281px;
+          top: 269px;
+          width: 220px;
+        }
+      }
+    }
+  }
+  footer {
+    > div {
+      margin-top: 80px;
+      margin-bottom: 122px;
     }
   }
 }
