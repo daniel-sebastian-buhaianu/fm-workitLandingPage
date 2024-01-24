@@ -125,6 +125,20 @@ main {
     }
   }
 }
+footer {
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 116px;
+    height: 102px;
+    margin: 74px auto 64px auto;
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
 .btn {
   border: none;
   font-family: $secondary--font-family, sans-serif;

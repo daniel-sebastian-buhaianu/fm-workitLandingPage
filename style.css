@@ -123,6 +123,19 @@ main .benefit .text {
   margin-bottom: 24px;
 }
 
+footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 116px;
+  height: 102px;
+  margin: 74px auto 64px auto;
+}
+footer > div div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn {
   border: none;
   font-family: "Manrope", sans-serif;
