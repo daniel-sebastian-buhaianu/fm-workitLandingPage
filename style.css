@@ -55,6 +55,27 @@ header .hero img {
   margin-top: 64px;
 }
 
+main {
+  position: relative;
+  z-index: -1;
+}
+main svg {
+  width: 100%;
+  height: 1070px;
+  margin-top: -100px;
+}
+main .container {
+  position: absolute;
+  top: 0;
+  margin-top: -100px;
+  width: 100%;
+}
+main .container > div {
+  margin-top: 245px;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
 main .benefit {
   display: flex;
   flex-direction: column;
@@ -88,7 +109,6 @@ main .benefit .text {
 }
 
 #about-us {
-  margin-top: -245px;
   display: flex;
   flex-direction: column;
   align-items: center;
