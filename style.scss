@@ -8,11 +8,16 @@ html {
   font-family: $primary--font-family, serif;
 }
 header {
-  height: 482px;
-  background-image: url(assets/images/header.svg);
-  background-repeat: no-repeat;
   position: relative;
-  z-index: -1;
+  svg {
+    width: 100%;
+    height: 481px;
+  }
+  .container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
   nav {
     padding: 32px 16px 0px 16px;
     display: flex;
@@ -26,6 +31,8 @@ header {
     justify-content: center;
     align-items: center;
     h1 {
+      width: 343px;
+      margin: auto;
       color: white;
       font-size: 50px;
       font-weight: 600;
@@ -53,13 +60,6 @@ header {
   }
 }
 main {
-  height: 1070px;
-  background-image: url(assets/images/main.svg);
-  background-repeat: no-repeat;
-  margin-top: -105px;
-  padding-top: 245px;
-  position: relative;
-  z-index: -2;
   .benefit {
     display: flex;
     flex-direction: column;
