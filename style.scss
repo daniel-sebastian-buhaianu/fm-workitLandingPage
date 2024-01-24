@@ -12,7 +12,9 @@ header {
   position: relative;
   svg {
     width: 100%;
-    height: 481px;
+  }
+  .svg--mid {
+    display: none;
   }
   .container {
     width: 100%;
@@ -65,9 +67,9 @@ main {
   z-index: -1;
   svg {
     width: 100%;
-    height: 1070px;
     margin-top: -100px;
   }
+  .svg--mid { display: none; }
   .container {
     position: absolute;
     top: 0;
@@ -187,9 +189,8 @@ footer {
 }
 @media (min-width: $tablet--breakpoint) {
   header {
-    svg {
-      height: 540px;
-    }
+    .svg--sm { display: none; }
+    .svg--mid { display: inherit; }
     .pattern {
       display: inherit;
       position: absolute;
@@ -230,11 +231,12 @@ footer {
   }
   main {
     svg {
-      height: 920px;
       margin-top: -145px;
     }
+    .svg--sm { display: none; }
+    .svg--mid { display: inherit; }
     .container {
-      margin-top: -145px;
+      margin-top: 0px;
       > div {
         margin-top: 325px;
         width: 573px;
