@@ -8,7 +8,8 @@ header {
 header svg {
   width: 100%;
 }
-header .svg--mid {
+header .svg--mid,
+header .svg--lg {
   display: none;
 }
 header .container {
@@ -298,6 +299,50 @@ footer > div div {
   footer > div {
     margin-top: 80px;
     margin-bottom: 122px;
+  }
+}
+@media (min-width: 1440px) {
+  header .svg--mid {
+    display: none;
+  }
+  header .svg--lg {
+    display: inherit;
+  }
+  header nav {
+    padding: 56px 165px 0px 165px;
+  }
+  header nav .logo {
+    width: 95px;
+    height: 24px;
+  }
+  header .pattern:first-of-type {
+    top: 116px;
+    left: -138px;
+  }
+  header .pattern:last-of-type {
+    top: 314px;
+    right: -48px;
+  }
+  header .hero {
+    margin-left: 361px;
+    margin-right: 312px;
+  }
+  header .hero h1 {
+    font-size: 80px;
+    width: 635px;
+  }
+  header .hero h1 span:after {
+    top: 88px;
+    width: 243px;
+  }
+  header .hero button {
+    margin-top: 37px;
+    padding: 16px 32px;
+  }
+  header .hero img {
+    width: 715px;
+    height: 427px;
+    margin-top: 65px;
   }
 }
 
