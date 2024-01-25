@@ -302,6 +302,7 @@ footer > div div {
   }
   .btn {
     font-size: 18px;
+    line-height: 32px;
   }
   header nav {
     padding: 56px 165px 0px 165px;
@@ -370,6 +371,43 @@ footer > div div {
   main .benefit > div .text {
     font-size: 18px;
     line-height: 32px;
+  }
+  #about-us .container {
+    width: 1112px;
+    height: 790.7px;
+  }
+  #about-us .container img {
+    width: 450px;
+    height: 453px;
+    margin-top: 143px;
+  }
+  #about-us .container > div {
+    width: 730px;
+    height: 413px;
+    left: 382px;
+    top: -240px;
+  }
+  #about-us .container > div h3 {
+    font-size: 56px;
+    line-height: 64px;
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+  #about-us .container > div .text {
+    width: 602px;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  #about-us .container > div button {
+    width: 190px;
+    height: 61px;
+    padding: 0;
+  }
+  #about-us .container > div .pattern {
+    height: 220px;
+    left: 437px;
+    top: 263px;
   }
 }
 

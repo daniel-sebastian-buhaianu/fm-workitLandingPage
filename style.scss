@@ -306,7 +306,10 @@ footer {
 @media (min-width: $desktop--breakpoint) {
   .svg--mid { display: none; }
   .svg--lg { display: inherit; }
-  .btn { font-size: 18px; }
+  .btn {
+    font-size: 18px;
+    line-height: 32px;
+  }
   header {
     nav {
       padding: 56px 165px 0px 165px;
@@ -379,6 +382,45 @@ footer {
         .text {
           font-size: 18px;
           line-height: 32px;
+        }
+      }
+    }
+  }
+  #about-us {
+    .container {
+      width: 1112px;
+      height: 790.7px;
+      img {
+        width: 450px;
+        height: 453px;
+        margin-top: 143px;
+      }
+      > div {
+        width: 730px;
+        height: 413px;
+        left: 382px;
+        top: -240px;
+        h3 {
+          font-size: 56px;
+          line-height: 64px;
+          margin-top: 64px;
+          margin-bottom: 32px;
+        }
+        .text {
+          width: 602px;
+          font-size: 18px;
+          line-height: 32px;
+          margin-bottom: 32px;
+        }
+        button {
+          width: 190px;
+          height: 61px;
+          padding: 0;
+        }
+        .pattern {
+          height: 220px;
+          left: 437px;
+          top: 263px;
         }
       }
     }
