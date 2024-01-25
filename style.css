@@ -8,10 +8,6 @@ header {
 header svg {
   width: 100%;
 }
-header .svg--mid,
-header .svg--lg {
-  display: none;
-}
 header .container {
   width: 100%;
   position: absolute;
@@ -65,9 +61,6 @@ main {
 main svg {
   width: 100%;
   margin-top: -100px;
-}
-main .svg--mid {
-  display: none;
 }
 main .container {
   position: absolute;
@@ -186,11 +179,16 @@ footer > div div {
   display: none;
 }
 
+.svg--mid,
+.svg--lg {
+  display: none;
+}
+
 @media (min-width: 768px) {
-  header .svg--sm {
+  .svg--sm {
     display: none;
   }
-  header .svg--mid {
+  .svg--mid {
     display: inherit;
   }
   header .pattern {
@@ -230,12 +228,6 @@ footer > div div {
   }
   main svg {
     margin-top: -145px;
-  }
-  main .svg--sm {
-    display: none;
-  }
-  main .svg--mid {
-    display: inherit;
   }
   main .container {
     margin-top: 0px;
@@ -302,11 +294,14 @@ footer > div div {
   }
 }
 @media (min-width: 1440px) {
-  header .svg--mid {
+  .svg--mid {
     display: none;
   }
-  header .svg--lg {
+  .svg--lg {
     display: inherit;
+  }
+  .btn {
+    font-size: 18px;
   }
   header nav {
     padding: 56px 165px 0px 165px;
@@ -343,6 +338,38 @@ footer > div div {
     width: 715px;
     height: 427px;
     margin-top: 65px;
+  }
+  main {
+    margin-top: -215px;
+  }
+  main .container > div {
+    margin-top: 463px;
+    display: flex;
+    justify-content: space-between;
+    width: 1114px;
+  }
+  main .benefit {
+    flex-direction: column;
+    margin-right: 26px;
+  }
+  main .benefit .number {
+    font-size: 24px;
+    line-height: 40px;
+    padding: 7px 22.5px;
+  }
+  main .benefit > div {
+    width: 354px;
+    margin-top: 56px;
+    text-align: center;
+  }
+  main .benefit > div h3 {
+    margin-bottom: 28px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  main .benefit > div .text {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 
