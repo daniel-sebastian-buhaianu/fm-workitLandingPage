@@ -161,10 +161,18 @@ footer > div div {
   font-size: 16px;
   font-weight: 700;
 }
+.btn:hover {
+  cursor: pointer;
+}
 .btn--primary {
   background-color: #44FFA1;
   color: #24053E;
   padding: 12px 24px;
+}
+.btn--primary:hover {
+  color: #44FFA1;
+  background-color: #24053E;
+  border: 3px solid #44FFA1;
 }
 .btn--secondary {
   background-color: #24053E;
@@ -173,6 +181,9 @@ footer > div div {
   line-height: 32px;
   letter-spacing: -0.16px;
   padding: 0;
+}
+.btn--secondary:hover {
+  color: #44FFA1;
 }
 
 .pattern {
@@ -408,6 +419,10 @@ footer > div div {
     height: 220px;
     left: 437px;
     top: 263px;
+  }
+  footer > div {
+    margin-top: 60px;
+    margin-bottom: 110px;
   }
 }
 
